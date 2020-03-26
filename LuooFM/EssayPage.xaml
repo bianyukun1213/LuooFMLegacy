@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="LuooFM.EssayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuooFM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel x:Name="rp_Essay">
+            <Button x:Name="btn_List" Content="回到专栏列表" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" VerticalAlignment="Bottom" Click="btn_List_Click"/>
+            <WebView x:Name="essay_WebView" RelativePanel.Above="btn_List" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+    </Grid>
+</Page>

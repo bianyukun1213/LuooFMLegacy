@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="LuooFM.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuooFM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">
+            <Span xml:space="preserve">落.FM Lite，一个简陋的第三方UWP版<Hyperlink NavigateUri="http://www.luoo.net">落网</Hyperlink>，由bianyukun1213（一个因病休学在家的16岁高中生，只上过一个星期的高中课程）制作。我的其他作品：<Hyperlink NavigateUri="http://sagittarius1213.blog.163.com/">冬青音乐播放器</Hyperlink>、<Hyperlink NavigateUri="http://bianyukun1213.pythonanywhere.com/">Mr.Bian的博客</Hyperlink>。</Span>
+        </TextBlock>
+    </Grid>
+</Page>

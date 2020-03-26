@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="LuooFM.PlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuooFM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button_Back" Content="返回" VerticalAlignment="Top" HorizontalAlignment="Right" Click="button_Back_Click" Grid.Column="2"/>
+        <Image x:Name="im_Im" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Stretch="Uniform"/>
+        <TextBlock x:Name="tb_Title" Text="" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" TextWrapping="Wrap"/>
+        <!--<Button x:Name="button_ModeZero" Content="列表循环" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Click="button_ModeZero_Click"/>
+        <Button x:Name="button_ModeOne" Content="单曲循环" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" Click="button_ModeOne_Click"/>-->
+        <Button x:Name="button_ModeTwo" Content="随机播放" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Click="button_ModeTwo_Click"/>
+        <MediaPlayerElement x:Name="mpe" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
+    </Grid>
+</Page>

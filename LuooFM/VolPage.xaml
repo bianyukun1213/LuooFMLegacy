@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="LuooFM.VolPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LuooFM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid_VolPage" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <Grid x:Name="grid_Vol">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="grid_Music" Grid.Row="4">
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                </Grid>
+                <Button x:Name="button_List1" Content="回到期刊列表" VerticalAlignment="Top" HorizontalAlignment="Right" Click="button_List_Click"/>
+                <Image x:Name="image_Vol" Grid.Row="1"/>
+                <TextBlock x:Name="textBlock_Title" Grid.Row="2" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                <TextBlock x:Name="textBlock_Content" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                <Button x:Name="button_List2" Content="回到期刊列表" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Row="5" Click="button_List_Click"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

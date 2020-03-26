@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="zh-cn" Name="set">
+    <AppName>落网</AppName>
+    <Example>播放期刊</Example>
+    <Command Name="PlayVol">
+      <Example>606（对Cortana说出期刊数字）</Example>
+      <ListenFor>{Vol}</ListenFor>
+      <Feedback>请稍候</Feedback>
+      <Navigate/>
+    </Command>
+    <PhraseTopic Label="Vol" Scenario="Short Message">
+      <Subject>Phone Number</Subject>
+    </PhraseTopic>
+  </CommandSet>
+</VoiceCommands>
